@@ -10,37 +10,53 @@ body { background:url(../images/bg.png);}
 .content { overflow:hidden;}
 
 /*輪播banner*/
-.content .banner {}
+.content .banner {
+	position: relative;
+  overflow-x: hidden;
+}
 .content .banner .slider-wrapper {
-	width: 950px;
-	margin: 0 auto;
+	/*width: 950px;
+	margin: 0 auto;*/
 	/*min-height: 300px;*/
+	width: 100%;
+	height: 418px;
+	overflow: hidden;
+}
+.content .banner .btn-arrow {
+	filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+  zoom:1;display: block;
+  height: 418px;
+  width: 50%;
+  top: 0;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+}
+.content .banner .btn-arrow span {
+	text-indent: -9999px;
+	width: 71px;
+	height: 70px;
+	background:url(../images/arrow.png);
+	position: absolute;
+  top: 174px;
 }
 .content .banner .btn-prev {
-	width: 71px;
-	height: 70px;
-	background:url(../images/arrow.png);
-	float: left;
-	cursor: pointer;
+	left: -385px;
 }
 .content .banner .btn-next {
-	width: 71px;
-	height: 70px;
-	background:url(../images/arrow.png);
+	right: -385px;
+}
+.content .banner .btn-prev span {
+	right: 0;
+}
+.content .banner .btn-next span {
 	background-position: -71px 0;
-	float: left;
-	cursor: pointer;
+	left: 0;
 }
 .content .banner .slider-container {
-	width: 776px;
-	height: 418px;
-	margin: 0 auto;
-	float: left;
 }
-.content .banner .slider-container .kv {
-	width: 776px;
-	height: 418px;
-	margin: 25px 10px;
+.content .banner .slider-container li {
 	float: left;
 }
 

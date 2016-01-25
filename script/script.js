@@ -26,3 +26,20 @@ $(window).load(function(){
 		}, moveSpeed);
 	}).scroll();	// 觸發一次 scroll()
 });
+
+$(function() {
+	$('.slider-container').carouFredSel({
+    width: '100%',
+    height: 418,
+    items: {
+      visible: 3
+    },
+    scroll: {
+      items: 1,
+      duration: 800,
+      timeoutDuration: 5000
+    },
+    prev: '.btn-prev',
+    next: '.btn-next'
+  });
+});
