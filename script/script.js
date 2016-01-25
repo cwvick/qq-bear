@@ -31,13 +31,22 @@ $(function() {
 	$('.slider-container').carouFredSel({
     width: '100%',
     height: 418,
+    auto: false,
     items: {
       visible: 3
+    },
+    onCreate: function(data) {
+    	$('.slider-container').find('li').addClass('grayscale');
+    	$('.slider-container').find('li').eq(1).removeClass('grayscale');
     },
     scroll: {
       items: 1,
       duration: 800,
-      timeoutDuration: 5000
+      timeoutDuration: 5000,
+      onAfter : function(data) {
+      	$('.slider-container').find('li').addClass('grayscale');
+      	$(data.items.visible).eq(1).removeClass('grayscale');
+      }
     },
     prev: '.btn-prev',
     next: '.btn-next'

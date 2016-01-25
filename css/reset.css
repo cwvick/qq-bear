@@ -29,7 +29,7 @@ output, progress, section, summary, time, video {
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-size: 100%;
+	/* [disabled]font-size: 100%; */
 	vertical-align: baseline;
 	background: transparent;
 }
@@ -56,7 +56,7 @@ ul {
 }
 
 ul ul {
-	list-style: circle;
+	list-style: none;
 }
 
 blockquote, q {
@@ -144,7 +144,12 @@ a:not(.text_box a):hover {
 .clearfix {
 	display: block;
 }
-/* End hide from IE-mac */
-#container {
 
-}
+/*全網頁通用*/
+body { background:url(../images/bg.png); font-family:"微軟正黑體";}
+.content { overflow:hidden;}
+.left { float:left;}
+.right { float:right;}
+
+/*go top*/
+.go { display:block; padding:0px 0 20px; width:53px; height:54px; margin-right:5%; z-index:2;}
