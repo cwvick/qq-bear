@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*通用*/
+.footer { width:100%; margin:0 auto;}
+
+.footer .social { width:100%; height:auto; background:url(../images/bg_social.png) no-repeat; background-position:top center; }
+.footer .social .media { width:1000px; margin:0 auto; padding:50px 0;}
+
+.footer .social .block { width:470px; height:288px; border:#cf7676 1px dotted;}
+.footer .social .date { width:470px;}
+
+.footer .social .block .FB { width:450px; height:268px; margin:10px; background-color:#CCC;}
+.footer .social .block .YOUTUBE { width:450px; height:268px; margin:10px; background-color:#CCC;}
+
+.footer .info { width:100%; height:auto; background:url(../images/bg_bottom.png) no-repeat; background-position:top center; background-size:cover; clear:both;}
+.footer .info ul { width:800px; margin:0 auto; padding: 20px 0;}
+.footer .info li { display:inline-block; height:31px; margin:0 10px;}
+.footer .contact { display:block; width:300px; height:63px; background:url(../images/contact_us.png) no-repeat; margin:30px auto;}
+.footer .copyright { color:#FFF; font-family: 'centaur'; font-size:13px; line-height:18px; width:360px; margin:0 auto; padding:20px; text-align:center;  }
+

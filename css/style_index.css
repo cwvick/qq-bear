@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*全網頁通用*/
+body { background:url(../images/bg.png);}
+.left { float:left;}
+.right { float:right;}
+
+/*內容*/
+.content { overflow:hidden;}
+
+/*輪播banner*/
+.content .banner {}
+.content .banner .slider-wrapper {
+	width: 950px;
+	margin: 0 auto;
+	/*min-height: 300px;*/
+}
+.content .banner .btn-prev {
+	width: 71px;
+	height: 70px;
+	background:url(../images/arrow.png);
+	float: left;
+	cursor: pointer;
+}
+.content .banner .btn-next {
+	width: 71px;
+	height: 70px;
+	background:url(../images/arrow.png);
+	background-position: -71px 0;
+	float: left;
+	cursor: pointer;
+}
+.content .banner .slider-container {
+	width: 776px;
+	height: 418px;
+	margin: 0 auto;
+	float: left;
+}
+.content .banner .slider-container .kv {
+	width: 776px;
+	height: 418px;
+	margin: 25px 10px;
+	float: left;
+}
+
+/*產品說明*/
+.content .explanation { width:100%;}
+
+.content .explanation .dessert, .content .explanation .balloon { max-width:1000px; height:auto; margin:0 auto; padding:120px 0; clear:both;}
+.content .explanation .dessert .product { margin-left:-300px; position:relative;}
+.content .explanation .balloon .product { position:relative;}
+
+.content .explanation .dessert .product .large { width:354px; height:336px; background:url(../images/circle_l.png) no-repeat; position:absolute; top:-80px;}
+.content .explanation .dessert .product .medium { width:219px; height:218px; background:url(../images/circle_m.png) no-repeat; position:absolute; top:80px; left:340px;}
+.content .explanation .dessert .product .small { width:182px; height:186px; background:url(../images/circle_s.png) no-repeat;position:absolute; top:30px; left:560px;}
+
+.content .explanation .balloon .product .large { width:354px; height:336px; background:url(../images/circle_l.png) no-repeat; position:absolute; top:-80px; left:500px;}
+.content .explanation .balloon .product .medium { width:219px; height:218px; background:url(../images/circle_m.png) no-repeat; position:absolute; top:80px; left:280px;}
+.content .explanation .balloon .product .small { width:182px; height:186px; background:url(../images/circle_s.png) no-repeat; position:absolute; top:30px; left:85px;}
+
+.content .explanation .dessert .word, .content .explanation .balloon .word { max-width:418px;}
+.content .explanation .dessert .word p, .content .explanation .balloon .word P { color:#676767; font-size:16px; line-height:28px; font-family:'round'; padding:40px 0;}
+
+.img_01 { width:298px; height:298px; margin:30px auto;}
+.img_02 { width:188px; height:188px; margin:20px auto;}
+.img_03 { width:160px; height:160px; margin:10px auto;}
+
+/*最新動態*/
+.content .news { width:100%; height:auto; background:url(../images/bg_news.png) no-repeat; background-position:top center;}
+.content .news .heading { width:1000px; height:60px; margin:0 auto; padding-bottom:20px;}
+.content .news .board { width:1000px; margin:0 auto; text-align:center;}
+.content .news .board .item { display:inline-block; width:230px; border:#cf7676 1px solid; background:#FFF; border-radius:5px; margin:0 7px;}
+.content .news .board .item .picture { width:230px; height:200px; position:relative; }
+.content .news .board .item .picture:hover { filter: gray; -webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */}
+
+.content .news .board .item .picture .read { width:35px; height:29px; position:absolute; top:10px; right:10px; cursor:pointer; display:none;}
+.content .news .board .item .picture:hover .read { display:block}
+
+.content .news .board .item .title { text-align:left; color:#cf7676; font-size:14px; letter-spacing:10px; padding:10px 10px; border-bottom:#cf7676 1px dashed; border-top:#cf7676 1px dashed;}
+.content .news .board .item .brief { text-align:left; color:#676767; font-size:11px; padding:10px 0; line-height:18px; white-space: nowrap; overflow:hidden; text-overflow:ellipsis; width:210px; margin:0 auto; word-break: keep-all;}
+
+.content .news .board .item .love { background:#cf7676; padding:10px 0;}
+.content .news .board .item .love .count { width:180px; position:relative; margin-left:75px;}
+.content .news .board .item .love .count .button { display:inline-block; width:17px; height:16px; cursor:pointer; position:absolute; top:3px; left:25px}
+.content .news .board .item .love .count .text { color:#FFF; font-size:13px; margin:0 5px; display:inline-block;}
+.content .news .board .item .love .count .number { color:#FFF; font-size:13px; line-height:16px; display:inline-block;}
+
+/*go top*/
+.go { display:block; padding:50px 0; width:53px; height:54px; margin-right:5%; z-index:2;}
+
+/*購物車*/
+#abgne_float_ad {
+	display: none;
+	position: absolute;
+}
+#abgne_float_ad .carts { position:relative;}
+#abgne_float_ad .point {
+	position: absolute;
+	top: -85px;
+	left: 55px;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background: #FFF;
+}
+#abgne_float_ad .point .QTY { display:block; width:20px; color:#cf7676; text-align:center; margin:0 auto; font-family: 'centaur';}

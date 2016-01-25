@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*slogan --> centaur*/
+@font-face {
+	font-family: 'centaur';
+	src: url('../fonts/CENTAUR_0.eot');/*ie*/
+	src: 
+	url("../fonts/CENTAUR_0.eot?#iefix") format('embedded-opentype'),/*ie*/  
+	url("../fonts/CENTAUR_0.woff") format('woff'),  
+}
+
+@font-face {
+	font-family: 'round';
+	src: url('../fonts/文鼎細圓.eot');/*ie*/
+	src: 
+	url("../fonts/文鼎細圓.eot?#iefix") format('embedded-opentype'),/*ie*/  
+	url("../fonts/文鼎細圓.woff") format('woff'),  
+}
+
