@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+.container { overflow:hidden;}
+.content .topic { width:1000px; margin:0 auto; padding-bottom:10px; }
+
+/*4影片*/
+.content .videozone { width:100%; height:560px; background:url(../images/bg_video.png) top center no-repeat; }
+.content .youtubeplay { width:735px; height:410px; margin: 0 auto; padding-top:110px; }
+.content .videoword { width:100%; max-width:1000px; color:#676767; line-height:40px; text-align:center; padding:40px; margin:0 auto; }
+.content .videoword img { width:100%; max-width:1000px; margin:0 auto; }
+
+/*4行事曆*/
+.content .schedule { width:100%; height:650px; max-width:1000px; margin:20px auto ;; border:#cf7676 1px solid; border-radius:10px; text-indent:-9999px; }
+
+/*4預約按鈕*/
+.content .reservationbt { width:100%; height:48px; margin:0 auto; padding:30px; }
+.content a.reservenow { display:block; width:260px; height:48px; margin:0 auto; padding-right:60px; }
+
+/*4聯絡我們*/
+.content .contact { width:100%; max-width:1000px; margin:0 auto; color:#676767; padding:20px 0; }
+.content .contact p { background-color:#cf7676; color:#FFF; padding:12px 0; padding-left:10px; margin-bottom:10px; }
+.content .contact ul { padding:20px 0; }
+.content .contact li { float:left; margin-right:20px; }
+.content .contact li span { display:block; height:43px; float:left; padding-right:10px; }
+.content .contact li.name { background-color:#cf7676; color:#FFF; padding:5px 10px; margin-top:5px; }
+.content .contact li.phone, .content .contact li.line, .content .contact li.wechat { line-height:43px; }
+
+/*4-1送出表單*/
+.content .kv_03 { width:955px; height:340px; margin:30px auto; background:url(../images/buyphoto_03.png); }
+.content a.checkout { padding-right:25px; }
+
+@media screen and (max-width:960px) { 
+
+.content .schedule { width:98%; }
+
+}

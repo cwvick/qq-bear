@@ -28,27 +28,68 @@ $(window).load(function(){
 });
 
 $(function() {
-	$('.slider-container').carouFredSel({
-    width: '100%',
-    height: 418,
-    auto: false,
-    items: {
-      visible: 3
-    },
-    onCreate: function(data) {
-    	$('.slider-container').find('li').addClass('grayscale');
-    	$('.slider-container').find('li').eq(1).removeClass('grayscale');
-    },
-    scroll: {
-      items: 1,
-      duration: 800,
-      timeoutDuration: 5000,
-      onAfter : function(data) {
-      	$('.slider-container').find('li').addClass('grayscale');
-      	$(data.items.visible).eq(1).removeClass('grayscale');
-      }
-    },
-    prev: '.btn-prev',
-    next: '.btn-next'
+
+  var bannerSlideDesktop = function() {
+    $('.slider-container').carouFredSel({
+      width: '100%',
+      height: 418,
+      auto: false,
+      items: {
+        visible: 3
+      },
+      onCreate: function(data) {
+        $('.slider-container').find('li').addClass('grayscale');
+        $('.slider-container').find('li').eq(1).removeClass('grayscale');
+      },
+      scroll: {
+        items: 1,
+        duration: 800,
+        timeoutDuration: 5000,
+        onAfter: function(data) {
+          $('.slider-container').find('li').addClass('grayscale');
+          $(data.items.visible).eq(1).removeClass('grayscale');
+        }
+      },
+      prev: '.btn-prev',
+      next: '.btn-next'
+    });
+  };
+
+  var bannerSlideMobile = function() {
+  	$('.slider-container').find('li').removeClass('grayscale');
+
+    $('.slider-container').carouFredSel({
+      responsive: true,
+      auto: false,
+      swipe: {
+        onTouch: true,
+        onMouse: true
+      },
+      items: {
+        visible: 1,
+        height: '54%'
+      },
+      pagination: '.pagination'
+    });
+  };
+
+  var $win = $(window);
+  var winWidth = $win.width();
+
+  if (winWidth > 960) {
+    bannerSlideDesktop();
+  } else {
+    bannerSlideMobile();
+  }
+
+  $win.resize(function() {
+    if ($win.width() > 960) {
+      bannerSlideDesktop();
+    } else {
+      bannerSlideMobile();
+    }
   });
+
 });
+
+   

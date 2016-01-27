@@ -11,7 +11,9 @@
 <link href="css/style_footer.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="script/jquery.js"></script>
 <script type="text/javascript" src="script/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="script/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script/script_header.js"></script>
 </head>
 
 <body>
@@ -37,59 +39,97 @@
   </ul>
   <div class="balloon"></div>
   </div><!--nav-->
+  <div class="phone_menu">
+            <div class="inner clearfix">
+                <div class="burger_nav">
+                    <a href="#">
+                        <div class="line_1"></div>
+                        <div class="line_2"></div>
+                        <div class="line_3"></div>
+                    </a>
+                </div>
+            </div><!--inner-->
+        <div class="show_nav_box">
+            <div class="inner">
+                <ul>
+                    <li class="navi">
+                        <a href="#">散播歡樂</a>
+                    </li>
+                    <li class="navi">
+                        <a href="#">最新動態</a>
+                    </li>
+                    <li class="navi">
+                        <a href="#">手做點心</a>
+                    </li>
+                    <li class="navi">
+                        <a href="#">氣球活動</a>
+                    </li>
+                    <li class="navi">
+                        <a href="#">購物車</a>
+                    </li>                    
+                </ul>
+            </div>
+        </div>            
+  </div><!--phonemenu-->
+  <div class="logo"><img src="images/logo.png" class="rw_img"></div>  
  </div><!--header-->
  
  <div class="content">
   <div class="banner">
-   <div class="slider-wrapper">
-    <div class="btn-prev btn-arrow"><span></span></div>
-    <div class="btn-next btn-arrow"><span></span></div>
-    <ul class="slider-container clearfix">
-     <li><img src="images/board.png"></li>
-     <li><img src="images/board.png"></li>
-     <li><img src="images/board.png"></li>
-     <li><img src="images/board.png"></li>
-     <li><img src="images/board.png"></li>
-     <li><img src="images/board.png"></li>
-     <li><img src="images/board.png"></li>
-    </ul>
-   </div><!--slider-wrapper-->
+    <div class="slider-wrapper">
+      <div class="btn-prev btn-arrow"><span></span></div>
+      <div class="btn-next btn-arrow"><span></span></div>
+      <ul class="slider-container clearfix">
+        <li><img src="images/board.png" class="rw_img"></li>
+        <li><img src="images/board.png" class="rw_img"></li>
+        <li><img src="images/board.png" class="rw_img"></li>
+        <li><img src="images/board.png" class="rw_img"></li>
+        <li><img src="images/board.png" class="rw_img"></li>
+        <li><img src="images/board.png" class="rw_img"></li>
+        <li><img src="images/board.png" class="rw_img"></li>
+      </ul>
+      <div class="pagination"></div>
+    </div><!--slider-wrapper-->
   </div><!--banner-->
+
   
   <div class="explanation">
+   <div class="w"><img src="images/w.png" class="rw_img"></div>
    <div class="dessert">
-    <div class="product left">
+    <div class="product">
      <div class="large"><div class="img_01"><img src="images/dessert_01.png"></div></div>
      <div class="medium"><div class="img_02"><img src="images/dessert_02.png"></div></div>
      <div class="small"><div class="img_03"><img src="images/dessert_03.png"></div></div>
     </div><!--product-->
-    <div class="word right">
-     <div class="topic"><img src="images/dessert.png"></div><!--topic-->
+    <div class="word">
+     <div class="topic"><img src="images/dessert.png" class="rw_img"></div><!--topic-->
      <p class="">現代人飲食添加物太多，人要活得簡單，東西吃的簡單，成份要更簡單，堅持以健康傳統手藝，保留產品原味，以「天然。健康。好味」的宗旨作為出發，透過嚴謹用心的製作過程，完美的將好味與養生結合，並分享給每一位愛護我們的同好。</p>
      <a href="#" class="button right"><img src="images/button_buynow.png"></a>
     </div><!--word-->
    </div><!--dessert-->
    
    <div class="balloon clearfix">
-    <div class="word left">
-     <div class="topic"><img src="images/balloon.png"></div><!--topic-->
-     <p class="">準備好跟我們一起歡慶同樂了嗎? ＱＱ去澳洲打工渡假，一路從北向南以造型氣球的街頭表演，經歷過不同的城市，也承接不同國家種族的派對活動，一路上歡笑不斷，ＱＱ希望將這份幸福歡樂傳遞下去~讓我們跟大家分享我們的歡樂與生活，紀錄了無數喜悅的大朋友、小朋友的開心時刻！</p>
-     <a href="#" class="button right"><img src="images/button_learnmore.png"></a>
-    </div><!--word-->
     <div class="product left">
      <div class="large"><div class="img_01"><img src="images/balloon_01.png"></div></div>
      <div class="medium"><div class="img_02"><img src="images/balloon_02.png"></div></div>
      <div class="small"><div class="img_03"><img src="images/balloon_03.png"></div></div>
-    </div><!--product-->        
-   </div><!--balloon-->
+    </div><!--product-->
+    <div class="word left">
+     <div class="topic"><img src="images/balloon.png" class="rw_img"></div><!--topic-->
+     <p class="">準備好跟我們一起歡慶同樂了嗎? ＱＱ去澳洲打工渡假，一路從北向南以造型氣球的街頭表演，經歷過不同的城市，也承接不同國家種族的派對活動，一路上歡笑不斷，ＱＱ希望將這份幸福歡樂傳遞下去~讓我們跟大家分享我們的歡樂與生活，紀錄了無數喜悅的大朋友、小朋友的開心時刻！</p>
+     <a href="#" class="button right"><img src="images/button_learnmore.png"></a>
+    </div><!--word-->            
+   </div><!--balloon-->   
+   <div class="clearfix"></div>
   </div><!--explanation-->
 
   <div class="news">
    <div class="heading">
     <div class="topic left"><img src="images/news.png"></div><!--topic-->
     <a href="#" class="button right"><img src="images/button_viewmore.png"></a>   
-   </div>
-   <div class="board clearfix">   
+   </div> 
+   <div class="clearfix"></div>  
+   <div class="board clearfix">  
     <div class="item">
      <div class="picture"><div href="#" class="read"><img src="images/read.png"></div><img src="images/item.png"></div>
      <div class="title">文章標題文章標題</div>
@@ -117,7 +157,7 @@
     </div><!--item-->
     
     <div class="item">
-     <div class="picture"><div href="#" class="read"><img src="images/read.png"></div><img src="images/item.png"></div>
+     <div class="picture"><div href="#" class="read"><img src="images/read.png" class="rw_img"></div><img src="images/item.png"></div>
      <div class="title">文章標題文章標題</div>
      <div class="brief">文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述文章簡述</div>
      <div class="love">
@@ -140,41 +180,39 @@
        <span class="number">9999</span>
       </div>
      </div><!--love-->
-    </div><!--item-->            
+    </div><!--item-->
+    <a href="#" class="button_phone right"><img src="images/button_viewmore.png"></a>            
    </div><!--board-->
   </div><!--news-->
-  <a href="#top" class="go right"><img src="images/top.png"></a>
  </div><!--content-->
+ <div class="clearfix"></div>
+   <a href="#top" class="go right"><img src="images/top.png"></a>
  
  <div class="footer">  
   <div class="social">
   <div class="media clearfix">
    <div class="data left">
     <div class="topic"><img src="images/icon_fb.png"></div><!--topic-->
-    <div class="block">
-     <div class="FB"></div><!--FB-->
-    </div><!--block-->
+    <div class="block clearfix">臉書資訊放這</div><!--block-->
    </div><!--data-->
    
    <div class="data right">
     <div class="topic"><img src="images/icon_yb.png"></div><!--topic-->
-    <div class="block">
-     <div class="YOUTUBE"></div><!--like-->
-    </div><!--block-->
+    <div class="block clearfix">youtube資訊放這</div><!--block-->
    </div><!--data-->
   </div><!--media-->
   </div><!--social-->
   
-  <div class="info">
+  <div class="info clearfix">
    <ul>
-    <li><a href="#"><img src="images/footer_01.png"></a></li>
+    <li><a href="#"><img src="images/footer_01.png" ></a></li>
     <li><a href="#"><img src="images/footer_02.png"></a></li>
     <li><a href="#"><img src="images/footer_03.png"></a></li>
     <li><a href="#"><img src="images/footer_04.png"></a></li>
     <li><a href="#"><img src="images/footer_05.png"></a></li>
     <li><a href="#"><img src="images/footer_06.png"></a></li>
    </ul>
-   <a href="mailto:serviceqqbear@gmail.com" class="contact"></a><!--contact-->
+   <a href="mailto:serviceqqbear@gmail.com" class="contact"><img src="images/contact_us.png" class="rw_img"></a><!--contact-->
    <p class="copyright">Privacy policy. © 2016 QQ x BEAR . All Rights Reserved. 
 Design X Produce by CHIGYOSHA.</p><!--copyright-->
   </div><!--info-->

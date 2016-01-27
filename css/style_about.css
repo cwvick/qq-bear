@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+.container { overflow:hidden;}
+.content .topic { width:1000px; margin:0 auto; padding-bottom:10px; }
+
+/*產品說明*/
+.content .explanation { width:100%; }
+
+.content .explanation .dessert, .content .explanation .balloon { max-width:1000px; height:auto; margin:0 auto; padding:50px 0; clear:both;}
+.content .explanation .dessert .product { margin-left:-200px; position:relative; float:left;}
+.content .explanation .balloon .product { position:relative;}
+
+.content .explanation .dessert .product .large { width:354px; height:336px; background:url(../images/circle_l.png) no-repeat; position:absolute; top:0px;}
+.content .explanation .dessert .product .medium { width:219px; height:218px; background:url(../images/circle_m.png) no-repeat; position:absolute; top:150px; left:340px;}
+
+.content .explanation .balloon .product .large { width:354px; height:336px; background:url(../images/circle_l.png) no-repeat; position:absolute; top:0px; left:250px;}
+.content .explanation .balloon .product .medium { width:219px; height:218px; background:url(../images/circle_m.png) no-repeat; position:absolute; top:150px; left:40px;}
+
+.content .explanation .dessert .word { width:60%; max-width:850px; float:right;}
+.content .explanation .balloon .word { width:60%; max-width:850px;}
+.content .explanation .dessert .word p, .content .explanation .balloon .word P { color:#676767; font-size:16px; line-height:32px; text-align:justify; padding:20px 0;}
+
+.img_01 { width:298px; height:298px; margin:30px auto;}
+.img_02 { width:188px; height:188px; margin:20px auto;}
+
+/*行事曆*/
+.content .schedule { width:100%; height:650px; max-width:1000px; margin:0 auto 20px;; border:#cf7676 1px solid; border-radius:10px; text-indent:-9999px; }
+
+/*聯絡我們*/
+.content .contact { width:100%; max-width:1000px; margin:0 auto; color:#676767; padding:20px 0; position:relative; }
+.content .contact p { background-color:#cf7676; color:#FFF; padding:12px 0; padding-left:10px; margin-bottom:10px; }
+.content .contact ul { padding:20px 0; }
+.content .contact li { float:left; margin-right:20px; }
+.content .contact li span { display:block; height:43px; float:left; padding-right:10px; }
+.content .contact li.name { background-color:#cf7676; color:#FFF; padding:5px 10px; margin-top:5px; }
+.content .contact li.phone, .content .contact li.line, .content .contact li.wechat { line-height:43px; }
+.content .contact .button_mail {
+	position: absolute;
+	top: 130px;
+	left:79%;
+}
+
+@media screen and (max-width:960px) { 
+/*行事曆*/
+.content .schedule { width:98%; }
+
+}

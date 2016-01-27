@@ -150,6 +150,16 @@ body { background:url(../images/bg.png); font-family:"微軟正黑體";}
 .content { overflow:hidden;}
 .left { float:left;}
 .right { float:right;}
+.rw_img { width: 100%; height: auto;}
 
 /*go top*/
-.go { display:block; padding:0px 0 20px; width:53px; height:54px; margin-right:5%; z-index:2;}
+.go { display:block; padding:20px 0 20px; width:53px; height:54px; margin-right:5%; z-index:2;}
+
+@media screen and (max-width:960px) {
+	body { font-size:0.7em;}
+	.content { max-width:1000px;}
+	.left { float:none;}
+	.right { float:none;}
+	.go { display:block; padding:0px 0 20px; width:53px; height:54px; margin-right:5%; z-index:2; float:right;}
+	
+	}
