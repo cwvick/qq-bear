@@ -69,8 +69,22 @@ $(function() {
         visible: 1,
         height: '54%'
       },
-      pagination: '.pagination'
+      pagination: {
+      	container: '.pagination',
+      	anchorBuilder: function(nr) {
+      		return '<a href="javascript:"><span><img src="images/point_01.png" class="rw_img"></span></a>';
+      	},
+      	onAfter: function(data) {
+	      	$('.pagination a').find('span').html('<img src="images/point_01.png" class="rw_img">');
+	      	$('.pagination a.selected').find('span').html('<img src="images/point_02.png" class="rw_img">');
+	      }
+      }
     });
+    
+    setTimeout(function() {
+    	$('.pagination a.selected').find('span').html('<img src="images/point_02.png" class="rw_img">');
+    }, 500);
+    
   };
 
   var $win = $(window);

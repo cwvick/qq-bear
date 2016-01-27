@@ -66,18 +66,16 @@
 	text-align: center;
 }
 .slider-wrapper .pagination a {
-	margin: 0 5px;
+	margin: 0 1%;
 }
 .slider-wrapper .pagination a span {
-	text-indent: -9999px;
+	font-size: 0;
 	display: inline-block;
-	width: 13px;
-	height: 13px;
+	max-width: 13px;
+	max-height: 13px;
+	width: 2%;
+	height: 2%;
 	overflow: hidden;
-	background: url(../images/point.png) no-repeat;
-}
-.slider-wrapper .pagination a.selected span {
-	background-position: -13px 0;
 }
 
 /*產品說明*/
